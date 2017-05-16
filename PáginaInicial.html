@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>MTPC - MAKE THE PC</title>
+     <link href="PgInicial.css" rel="stylesheet">
+     <link href="PgInicialSegunda.css" rel="stylesheet">
+           <script type="text/javascript" language="javascript"> 
+						var slideIndex = 1; // Recebe o valor referente a foto. ESSE SÓ APARECE PARA MOSTAR A PRIMEIRA IMAGEM.
+
+function plusSlides(n) { // Caso o usuário clica para voltar, o valor da imagem vai ser subtraida de(-1).
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+						</script>
+     
+</head>
+<body onload="showSlides()">//essa é uma funcão criada pela gente msm no javascritp
+<div class="banner">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img src="gab1.jpg" style="opacity:0.8;width:100%;height: 300px;">
+						<div class="texto_banner">
+                            
+                            <p><a href="#">Mais Informações</a></p>
+                            
+                        </div>
+					</div>
+
+					<div class="mySlides fade">
+						<img src="gab2.jpg" style="opacity:0.8;width:100%;height: 300px;">
+                        
+						<div class="texto_banner">
+                            
+                          <p> <a href="#">Mais Informações</a></p>
+                        
+                        </div>
+						
+					</div>
+					
+					<div class="mySlides fade">
+						<img src="gab3.jpg" style="opacity:0.8;width:100%;height:300px;">
+                        
+						<div class="texto_banner">
+                             <p><a href="#">Mais Informações</a></p>
+                        </div>
+                        
+					</div>
+					 
+					<div class="mySlides fade">
+						<img src="pain.jpg" style="opacity:0.8;width:100%;height: 300px;">
+                        
+						<div class="texto_banner">
+                            <p><a href="#">Mais Informações</a></p>
+                        </div>
+                        
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)"><img src="esquerda.png"></a>
+					<a class="next" onclick="plusSlides(1)"><img src="direita.png"></a>
+				</div>
+				<br>
+
+				<div style="text-align:center;">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+					<span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
+			</div>
+
+                        <nav id="nav">
+                            <ul>
+                                <li class="current"><a href="MontePCC.html"> Monte Seu PC</a></li>
+                                <li class="current"><a href="SobreNos.html"> Sobre Nós</a></li>
+                                <li class="current"><a href="entrarCont.html"> Entrar</a></li>
+                                <li class="current"><a href="Cad.html"> Cadastrar</a></li>
+                              
+                               
+                            </ul>
+                        </nav>
+                     <div id="cx2">
+                        
+                     </div>
+                      <div id="cx3">
+                          <input type="text" value="PESQUISAR">Procurar
+                      </div>
+                     <div id="cx4"></div>
+                       <marquee id="cx41" direction="left" scrollamount="9" width="600" height="400" behavior="left" onmouseover="this.stop()" onmouseout="this.start()"> 
+                        <a href="#" target="_blank">
+                        <img style="height:400px;width:300px"
+                        src="gab1.jpg"
+                        />
+                        </a> <a href="#">
+                        <img style="height:400px;width:300px"
+                        src="gab2.jpg"/>
+                        </a> <a href="#">
+                        <img style="height:400px;width:300px"
+                        src="gab3.jpg"
+                        />
+                        </a> <a href="#" target="_blank">
+                        <img style="height:400px;width:300px"
+                        src="gab4.jpg"
+                        />
+                        </a> <a href="#" target="_blank">
+                        <img style="height:400px;width:300px"
+                        src="gab5.jpg"
+                        />
+                        </a></marquee>
+                            
+                      
+                          <div id="p1">
+                              <h1> Os Produtos Mais Procurados</h1>
+                          </div>
+                         <div id="p2">
+                              <h1> MTPC - MAKE THE PC</h1>
+                          </div>
+                
+                    <div id="roda">
+                        <center>
+                        <img src="facebook.png">
+                        <img src="twitter.png">
+                        <img src="google.png">
+                        <img src="youtube.png">
+                        </center>
+                        <br><br>
+                        <p><center>MTPC-Monte o seu PC.</center></p>
+                        <p><center>Telefone:(92)91234-5678 - Email:MTPC@gmail.com</center></p>
+                    </div>
+    <img id="logo" src="logo.jpeg">
+    <div id="d1"> As melhores recomendações</div>
+    <div id="d2"></div>
+    <div id="d3"> aaaa</div>
+         
+</body>
+</html>

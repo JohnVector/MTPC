@@ -1,0 +1,105 @@
+body{
+    background: url(fundo.jpg) no-repeat ; 
+    background-size: 100%;
+    opacity: 0.9;
+    right: 0;
+}
+table{
+    background-color:dimgray;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 50%;
+}
+h2{
+    color: white;
+}
+label{
+    color: white;
+}
+#nav{
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    width: 85%;
+    height: 15%;
+    vertical-align: center;
+    right: 6px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0PX;
+    z-index: 1;
+    background-color: black;
+}
+#nav ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+#nav ul li {
+    padding: 4px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+#nav ul li {
+        float: left;
+        line-height: 0.5em;
+        text-align: center;
+}
+
+#nav ul li a, #nav ul li span {
+    font-weight: 800;
+    letter-spacing: 0.090em;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5em 3em 0.5em 1em;
+    text-align:center;
+}
+            
+#nav ul li > ul {
+    display: inline-block;
+}
+/*Funcao do menu */
+#nav ul li.current a {
+    background: #ED3237;
+    color: #fff;
+}
+div#form{
+    position: absolute;
+    width:100%;
+    height:80%;
+    top:20%;
+}
+div#roda{
+    position: absolute;
+    height:21%;
+    width:100%;
+    bottom: 0;
+    left:0;
+    right: 0;
+    top:90%;
+    background-color: black;
+    color: white;
+}
+img{
+    width:65px;
+    height:65px;
+    padding-right: 10px;
+}
+p{
+    color: white;
+}
+#cx1{
+	position: absolute;
+    top:0;
+    left:0;
+    height: 15%;
+    background-color: black;
+    width: 15%;
+}
+#center ul{
+    margin: 0 auto;
+    width: 95%;
+}

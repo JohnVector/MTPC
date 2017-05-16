@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link href="edit.css" rel="stylesheet">
+</head>
+<body>
+	   <img src="logo.jpeg" id="cx1">
+    <nav id="nav">
+        <div id="center">
+        <ul>
+            <li class="current"><a href="PáginaInicial.html"> Página Inicial</a></li>
+            <li class="current"><a href="MontePCC.html"> Monte seu PC</a></li>
+            <li class="current"><a href="SobreNos.html"> Sobre Nós</a></li>
+            <li class="current"><a href="Cad.html"> Entrar</a></li>
+            <li class="current"><a href="entrarCont.html"> Cadastrar</a></li>        
+        </ul>
+        </div>
+    </nav>
+    <div id="form">
+    <form id="formulario" name="cadastro" method="post" onsubmit="return validar(this);"action="cadReal.html">
+    <table border align="center">
+    <td>
+    <h2><center>Criar Conta</center></h2><br>
+    <label for="nome_usu">Nome: </label>
+    <input type="text" name="nome" id="nome_usu" size="50"><br><br>
+    <label for="emailUsu">Email: </label>
+    <input type="text" name="email" id="emailUsu" size="50"><br><br>
+    <label for="nickUsu">Nome do Usuário: </label>
+    <input type="text" name="nick" id="nickUsu" size="15"><br><br>
+    <label for="senhaUsu">Senha: </label>
+    <input type="text" name="senha" id="senhaUsu" size="13"><br><br>
+    <label for="confsenhaUsu">Confirme a senha: </label>
+    <input type="text" name="cfsenha" id="confsenhaUsu" size="13"><br><br>
+    <input type="checkbox" name="termComp" id="termComp" value="S">
+    <label for="info_mensal">Eu aceito os termos de compromisso da empresa.</label><br>
+    <input type="checkbox" name="info_prom" id="info_prom" value="S">
+    <label for="info_patroc">Quero receber as promoções do site.</label><br><br>
+    <center><input type="button" value="Cadastrar"></center>
+    </td>
+    </table>
+    </form>
+    </div>
+    <div id="roda">
+        <center>
+        <img src="facebook.png">
+        <img src="twitter.png">
+        <img src="google.png">
+        <img src="youtube.png">
+        </center>
+        <p><center>MTPC-Monte o seu PC.</center></p>
+        <p><center>Telefone:(92)91234-5678 - Email:MTPC@gmail.com</center></p>
+    </div>
+</body>
+</html>
